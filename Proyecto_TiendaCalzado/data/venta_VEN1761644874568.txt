@@ -1,0 +1,2 @@
+nombre=dfsf
+dni=212342

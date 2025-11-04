@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorProducto"
+            stylesheets="@/estilo.css" prefWidth="900" prefHeight="600">
+    <top>
+        <HBox styleClass="header" spacing="10" padding="10">
+            <Label text="Tienda - Explorar productos" style="-fx-font-size:16px; -fx-text-fill:white; -fx-font-weight:bold;" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="8" padding="10" prefWidth="560">
+            <TextField fx:id="txtBuscar" promptText="Buscar por nombre, color, talla o categoría" />
+            <ListView fx:id="listaProductos" prefHeight="420" />
+        </VBox>
+    </left>
+
+    <right>
+        <VBox spacing="10" padding="10" prefWidth="320">
+            <Label text="Carrito" style="-fx-font-weight:bold; -fx-text-fill:white;" />
+            <ListView fx:id="listaCarrito" prefHeight="300" />
+            <HBox spacing="8">
+                <Button fx:id="btnAgregarCarrito" text="Agregar al carrito" />
+                <Button fx:id="btnQuitarCarrito" text="Quitar" />
+            </HBox>
+            <Button fx:id="btnPagar" text="Pagar" />
+        </VBox>
+    </right>
+</BorderPane>

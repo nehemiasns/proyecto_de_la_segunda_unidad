@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorCategoria"
+            stylesheets="@/estilo.css" prefWidth="900" prefHeight="600">
+    <top>
+        <HBox styleClass="header" spacing="10" padding="10">
+            <Label text="Panel de Administración" style="-fx-font-size:16px; -fx-text-fill:white; -fx-font-weight:bold;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="12" padding="12">
+            <!-- Área categorías -->
+            <TitledPane text="Categorías" expanded="true">
+                <VBox spacing="8" padding="8">
+                    <HBox spacing="8">
+                        <TextField fx:id="txtNuevaCategoria" promptText="Nueva categoría" HBox.hgrow="ALWAYS"/>
+                        <Button fx:id="btnAgregarCategoria" text="Agregar" />
+                    </HBox>
+                    <TableView fx:id="tablaCategorias" prefHeight="150">
+                        <columns>
+                            <TableColumn text="ID" fx:id="colCatId" prefWidth="180" />
+                            <TableColumn text="Nombre" fx:id="colCatNombre" prefWidth="300" />
+                        </columns>
+                    </TableView>
+                    <HBox spacing="8">
+                        <Button fx:id="btnEliminarCategoria" text="Eliminar categoría seleccionada" />
+                    </HBox>
+                </VBox>
+            </TitledPane>
+
+            <!-- Área productos -->
+            <TitledPane text="Productos" expanded="true">
+                <VBox spacing="8" padding="8">
+                    <GridPane hgap="8" vgap="8">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="LEFT" />
+                            <ColumnConstraints halignment="LEFT" />
+                        </columnConstraints>
+
+                        <TextField fx:id="txtProdNombre" promptText="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtProdCategoria" promptText="Categoría" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <TextField fx:id="txtProdTalla" promptText="Talla" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtProdColor" promptText="Color" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <TextField fx:id="txtProdPrecio" promptText="Precio" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtProdStock" promptText="Stock" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </GridPane>
+
+                    <HBox spacing="8">
+                        <Button fx:id="btnAgregarProd" text="Agregar producto" />
+                        <Button fx:id="btnEditarProd" text="Editar producto" />
+                        <Button fx:id="btnEliminarProd" text="Eliminar producto" />
+                    </HBox>
+
+                    <TableView fx:id="tablaProductos" prefHeight="200">
+                        <columns>
+                            <TableColumn text="ID" fx:id="colProdId" prefWidth="120" />
+                            <TableColumn text="Nombre" fx:id="colProdNombre" prefWidth="220" />
+                            <TableColumn text="Categoría" fx:id="colProdCategoria" prefWidth="140" />
+                            <TableColumn text="Talla" fx:id="colProdTalla" prefWidth="80" />
+                            <TableColumn text="Color" fx:id="colProdColor" prefWidth="100" />
+                            <TableColumn text="Precio" fx:id="colProdPrecio" prefWidth="100" />
+                            <TableColumn text="Stock" fx:id="colProdStock" prefWidth="80" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </TitledPane>
+        </VBox>
+    </center>
+</BorderPane>

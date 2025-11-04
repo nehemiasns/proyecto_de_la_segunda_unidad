@@ -1,0 +1,2 @@
+nombre=sdfsdf
+dni=23424

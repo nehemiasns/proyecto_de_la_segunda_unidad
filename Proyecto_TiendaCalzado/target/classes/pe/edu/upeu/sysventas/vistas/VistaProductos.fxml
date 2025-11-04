@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorProducto"
+            prefWidth="800" prefHeight="500" stylesheets="@/estilo.css">
+    <children>
+        <VBox spacing="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" AnchorPane.bottomAnchor="8">
+            <HBox spacing="8">
+                <TextField fx:id="txtFiltro" promptText="Buscar..." HBox.hgrow="ALWAYS" />
+                <Button fx:id="btnFiltrar" text="Filtrar" />
+            </HBox>
+
+            <TableView fx:id="tablaProductos" prefHeight="420">
+                <columns>
+                    <TableColumn text="ID" fx:id="colId" prefWidth="90" />
+                    <TableColumn text="Nombre" fx:id="colNombre" prefWidth="220" />
+                    <TableColumn text="Categoría" fx:id="colCategoria" prefWidth="140" />
+                    <TableColumn text="Talla" fx:id="colTalla" prefWidth="80" />
+                    <TableColumn text="Color" fx:id="colColor" prefWidth="100" />
+                    <TableColumn text="Precio" fx:id="colPrecio" prefWidth="100" />
+                    <TableColumn text="Stock" fx:id="colStock" prefWidth="80" />
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>

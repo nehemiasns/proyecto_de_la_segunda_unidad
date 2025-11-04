@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorCategoria"
+            prefWidth="600" prefHeight="400" stylesheets="@/estilo.css">
+    <children>
+        <VBox spacing="10" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" AnchorPane.bottomAnchor="8">
+            <HBox spacing="8">
+                <TextField fx:id="txtNombreCat" promptText="Nombre categoría" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="btnAgregarCat" text="Agregar" />
+            </HBox>
+            <TableView fx:id="tablaCategorias" prefHeight="320">
+                <columns>
+                    <TableColumn text="ID" fx:id="colIdCat" prefWidth="160" />
+                    <TableColumn text="Nombre" fx:id="colNomCat" prefWidth="360" />
+                </columns>
+            </TableView>
+            <HBox spacing="8">
+                <Button fx:id="btnEliminarCat" text="Eliminar seleccionada" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

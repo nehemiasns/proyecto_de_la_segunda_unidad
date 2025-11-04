@@ -1,0 +1,2 @@
+nombre=dsfsdf
+dni=23432

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorVenta"
+            prefWidth="800" prefHeight="500" stylesheets="@/estilo.css">
+    <children>
+        <VBox spacing="10" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" AnchorPane.bottomAnchor="8">
+            <Label text="Historial de ventas" style="-fx-font-weight:bold; -fx-text-fill:white;" />
+            <TableView fx:id="tablaVentas" prefHeight="360">
+                <columns>
+                    <TableColumn text="ID Venta" fx:id="colVenId" prefWidth="140" />
+                    <TableColumn text="Usuario" fx:id="colVenUsuario" prefWidth="160" />
+                    <TableColumn text="Fecha/Hora" fx:id="colVenFecha" prefWidth="200" />
+                    <TableColumn text="Total" fx:id="colVenTotal" prefWidth="120" />
+                    <TableColumn text="Detalle" fx:id="colVenDetalle" prefWidth="300" />
+                </columns>
+            </TableView>
+
+            <HBox spacing="8">
+                <Button fx:id="btnGenerarTicket" text="Generar comprobante" />
+                <Button fx:id="btnFiltrarUsuario" text="Filtrar por usuario" />
+                <TextField fx:id="txtFiltroUsuario" promptText="Usuario" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

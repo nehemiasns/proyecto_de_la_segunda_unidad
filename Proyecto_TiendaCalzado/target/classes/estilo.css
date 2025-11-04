@@ -1,0 +1,93 @@
+/* estilo general: paleta negra / morada / blanco */
+.root {
+    -fx-font-family: "Segoe UI", Roboto, Arial;
+    -fx-background-color: linear-gradient(to bottom right, #0b0b0b, #1b0630);
+}
+
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.button {
+    -fx-background-radius: 12;
+    -fx-padding: 8 14 8 14;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 6, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-background-color: linear-gradient(to bottom, #6a00d4, #3b0070);
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-translate-y: -2;
+    -fx-opacity: 0.95;
+}
+
+/* Botones primarios y secundarios */
+.btn-primary {
+    -fx-background-color: linear-gradient(to bottom, #7a2aff, #3b0070);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 8 12 8 12;
+}
+.btn-ghost {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.12);
+    -fx-text-fill: white;
+}
+
+/* Tarjetas y paneles */
+.card {
+    -fx-background-color: linear-gradient(to bottom right, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    -fx-background-radius: 12;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 4);
+}
+
+.product-card {
+    -fx-background-color: rgba(255,255,255,0.02);
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-border-color: rgba(255,255,255,0.04);
+}
+
+/* Tabla cabezera */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #1b0630, #33003f);
+}
+
+/* Badges */
+.badge-lowstock {
+    -fx-background-color: #ae50ff;
+    -fx-text-fill: white;
+    -fx-padding: 3 6 3 6;
+    -fx-background-radius: 8;
+    -fx-font-size: 11px;
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 8;
+    -fx-padding: 6 8 6 8;
+    -fx-border-color: rgba(255,255,255,0.06);
+    -fx-background-color: rgba(255,255,255,0.02);
+    -fx-text-fill: white;
+}
+
+.list-cell {
+    -fx-background-color: rgba(255,255,255,0.02);
+    -fx-border-color: rgba(255,255,255,0.04);
+    -fx-padding: 8;
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: rgba(255,255,255,0.02);
+    -fx-table-cell-border-color: transparent;
+}
+
+.header {
+    -fx-background-color: linear-gradient(to right, #1b0630, #33003f);
+    -fx-padding: 10;
+    -fx-border-radius: 0 0 12 12;
+}

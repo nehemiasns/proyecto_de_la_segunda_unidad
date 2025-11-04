@@ -1,0 +1,2 @@
+nombre=rayo
+dni=73944395

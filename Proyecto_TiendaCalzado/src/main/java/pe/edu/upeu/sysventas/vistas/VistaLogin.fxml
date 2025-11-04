@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controlador.ControladorLogin"
+            prefWidth="560" prefHeight="380" stylesheets="@/estilo.css">
+    <children>
+        <VBox alignment="CENTER" spacing="12" layoutX="80" layoutY="60" AnchorPane.leftAnchor="80" AnchorPane.rightAnchor="80" AnchorPane.topAnchor="60" AnchorPane.bottomAnchor="60">
+            <Label text="Tienda de Calzado - Iniciar sesión" style="-fx-font-size:18px; -fx-text-fill:white; -fx-font-weight:bold;" />
+            <TextField fx:id="txtUsuario" promptText="Usuario" />
+            <PasswordField fx:id="txtContrasena" promptText="Contraseña" />
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="btnEntrar" text="Iniciar sesión" />
+                <Button fx:id="btnRegistrar" text="Registrar" />
+            </HBox>
+            <Label fx:id="lblMensaje" text="" style="-fx-text-fill:tomato;" />
+        </VBox>
+    </children>
+</AnchorPane>
